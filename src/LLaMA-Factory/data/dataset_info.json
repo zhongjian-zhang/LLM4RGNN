@@ -1,0 +1,125 @@
+{
+  "train": {
+    "file_name": "train.jsonl"
+  },
+  "cora": {
+    "file_name": "cora.jsonl"
+  },
+  "negative_cora": {
+    "file_name": "negative_cora.jsonl"
+  },
+  "cora_meta_0.05": {
+    "file_name": "cora_meta_0.05.jsonl"
+  },
+  "cora_meta_0.1": {
+    "file_name": "cora_meta_0.1.jsonl"
+  },
+  "cora_meta_0.2": {
+    "file_name": "cora_meta_0.2.jsonl"
+  },
+  "cora_dice_0.1": {
+    "file_name": "cora_dice_0.1.jsonl"
+  },
+  "cora_dice_0.2": {
+    "file_name": "cora_dice_0.2.jsonl"
+  },
+  "cora_dice_0.4": {
+    "file_name": "cora_dice_0.4.jsonl"
+  },
+  "citeseer": {
+    "file_name": "citeseer.jsonl"
+  },
+  "negative_citeseer": {
+    "file_name": "negative_citeseer.jsonl"
+  },
+  "citeseer_meta_0.05": {
+    "file_name": "citeseer_meta_0.05.jsonl"
+  },
+  "citeseer_meta_0.1": {
+    "file_name": "citeseer_meta_0.1.jsonl"
+  },
+  "citeseer_meta_0.2": {
+    "file_name": "citeseer_meta_0.2.jsonl"
+  },
+  "citeseer_dice_0.1": {
+    "file_name": "citeseer_dice_0.1.jsonl"
+  },
+  "citeseer_dice_0.2": {
+    "file_name": "citeseer_dice_0.2.jsonl"
+  },
+  "citeseer_dice_0.4": {
+    "file_name": "citeseer_dice_0.4.jsonl"
+  },
+  "pubmed": {
+    "file_name": "pubmed.jsonl"
+  },
+  "pubmed_dice_0.1": {
+    "file_name": "pubmed_dice_0.1.jsonl"
+  },
+  "pubmed_dice_0.2": {
+    "file_name": "pubmed_dice_0.2.jsonl"
+  },
+  "pubmed_dice_0.4": {
+    "file_name": "pubmed_dice_0.4.jsonl"
+  },
+  "negative_pubmed": {
+    "file_name": "negative_pubmed.jsonl"
+  },
+  "pubmed_meta_0.05": {
+    "file_name": "pubmed_meta_0.05.jsonl"
+  },
+  "pubmed_meta_0.1": {
+    "file_name": "pubmed_meta_0.1.jsonl"
+  },
+  "pubmed_meta_0.2": {
+    "file_name": "pubmed_meta_0.2.jsonl"
+  },
+  "ogbn_arxiv": {
+    "file_name": "ogbn_arxiv.jsonl"
+  },
+  "ogbn_arxiv_dice_0.1": {
+    "file_name": "ogbn_arxiv_dice_0.1.jsonl"
+  },
+  "ogbn_arxiv_dice_0.2": {
+    "file_name": "ogbn_arxiv_dice_0.2.jsonl"
+  },
+  "ogbn_arxiv_dice_0.4": {
+    "file_name": "ogbn_arxiv_dice_0.4.jsonl"
+  },
+  "negative_ogbn_arxiv": {
+    "file_name": "negative_ogbn_arxiv.jsonl"
+  },
+  "ogbn_arxiv_meta_0.05": {
+    "file_name": "ogbn_arxiv_meta_0.05.jsonl"
+  },
+  "ogbn_arxiv_meta_0.1": {
+    "file_name": "ogbn_arxiv_meta_0.1.jsonl"
+  },
+  "ogbn_arxiv_meta_0.2": {
+    "file_name": "ogbn_arxiv_meta_0.2.jsonl"
+  },
+  "ogbn_product": {
+    "file_name": "ogbn_product.jsonl"
+  },
+  "negative_ogbn_product": {
+    "file_name": "negative_ogbn_product.jsonl"
+  },
+  "ogbn_product_dice_0.1": {
+    "file_name": "ogbn_product_dice_0.1.jsonl"
+  },
+  "ogbn_product_dice_0.2": {
+    "file_name": "ogbn_product_dice_0.2.jsonl"
+  },
+  "ogbn_product_dice_0.4": {
+    "file_name": "ogbn_product_dice_0.4.jsonl"
+  },
+  "ogbn_product_meta_0.05": {
+    "file_name": "ogbn_product_meta_0.05.jsonl"
+  },
+  "ogbn_product_meta_0.1": {
+    "file_name": "ogbn_product_meta_0.1.jsonl"
+  },
+  "ogbn_product_meta_0.2": {
+    "file_name": "ogbn_product_meta_0.2.jsonl"
+  }
+}
