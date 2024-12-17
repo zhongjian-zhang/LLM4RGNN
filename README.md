@@ -137,7 +137,9 @@ For local LLMs, when no purification occurs, the purification threshold 𝛽 is 
 
 For LM-based edge predictor, the threshold 𝛾 is tuned from {0.91, 0.93, 0.95, 0.97, 0.99} and the number of edges 𝐾 is tuned from {1, 3, 5, 7, 9}.
 
-## 8. Reference
+## 8. 📝 Citation and Reference
+
+If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
 
 ```
 @article{zhang2024llm4rgnn,
@@ -147,4 +149,3 @@ For LM-based edge predictor, the threshold 𝛾 is tuned from {0.91, 0.93, 0.95,
   year={2024}
 }
 ```
-
