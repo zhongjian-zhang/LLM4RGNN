@@ -133,7 +133,7 @@ bash LLM4RGNN/src/vllm/vllm_inference.sh
 
 ## 7. Hyper-parameters
 
-For local LLMs, when no purification occurs, the purification threshold 𝛽 is select from {1, 2} to prevent deleting too many edges; otherwise, it is set to 4.
+For local LLMs, when no purification occurs, the purification threshold 𝛽 is selected from {1, 2} to prevent deleting too many edges; otherwise, it is selected from {2, 3, 4}.
 
 For LM-based edge predictor, the threshold 𝛾 is tuned from {0.91, 0.93, 0.95, 0.97, 0.99} and the number of edges 𝐾 is tuned from {1, 3, 5, 7, 9}.
 
