@@ -83,7 +83,7 @@ https://drive.google.com/file/d/1GcZuuEIY8g4xgd6KWsglLjNnIveVLmLQ/view?usp=shari
 
 ## 4. LLMs
 
-LLM4RGNN is a general framework, suitable for different LLMs. As representative 7B-scale LLMs, Mistral-7B is selected as local LLMs in our experiment. You can download Mistral-7B from the link below:
+LLM4RGNN is a general framework, suitable for different LLMs. As representative 7B-scale LLMs, Mistral-7B is selected as the local LLM in our experiment. You can download Mistral-7B from the link below:
 
 Hugging Face: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
 
@@ -101,7 +101,7 @@ bash LLM4RGNN/src/LLaMA-Factory/merge.sh
 
 **Notably, you need to specify the original llm path by modifying the model_name_or_path in instruct_tuning.sh and merge.sh**
 
-We also provide the mistral-7B lora file in `LLM4RGNN/saved_model/llm/mistral-7b-lora`, thus you can directly use it to skip tuning the LLM.
+We also provide the mistral-7B lora file in `LLM4RGNN/saved_model/llm/mistral-7b-lora`, thus you can directly use it to skip tuning LLMs.
 
 ## 5. Experiment
 
