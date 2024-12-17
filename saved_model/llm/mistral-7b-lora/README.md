@@ -5,7 +5,7 @@ tags:
 - llama-factory
 - lora
 - generated_from_trainer
-base_model: /home/zzj/pycharm_project/LLM4RGNN/src/LLM/models/mistral-7b/snapshots/7ad5799710574ba1c1d953eba3077af582f3a773
+base_model: LLM4RGNN/src/LLM/models/mistral-7b/snapshots/7ad5799710574ba1c1d953eba3077af582f3a773
 model-index:
 - name: mistral-7b-lora
   results: []
@@ -16,7 +16,7 @@ should probably proofread and complete it, then remove this comment. -->
 
 # mistral-7b-lora
 
-This model is a fine-tuned version of [/home/zzj/pycharm_project/LLM4RGNN/src/LLM/models/mistral-7b/snapshots/7ad5799710574ba1c1d953eba3077af582f3a773](https://huggingface.co//home/zzj/pycharm_project/LLM4RGNN/src/LLM/models/mistral-7b/snapshots/7ad5799710574ba1c1d953eba3077af582f3a773) on the train dataset.
+This model is a fine-tuned version of [LLM4RGNN/src/LLM/models/mistral-7b/snapshots/7ad5799710574ba1c1d953eba3077af582f3a773](https://huggingface.co/LLM4RGNN/src/LLM/models/mistral-7b/snapshots/7ad5799710574ba1c1d953eba3077af582f3a773) on the train dataset.
 
 ## Model description
 
