@@ -103,6 +103,8 @@ bash LLM4RGNN/src/LLaMA-Factory/merge.sh
 
 We also provide the mistral-7B lora file in `LLM4RGNN/saved_model/llm/mistral-7b-lora`, thus you can directly use it to skip tuning LLMs.
 
+🎯We recently uploaded the well-tuned Mistral-7B at [https://huggingface.co/DreamCode/LLM4RGNN](https://huggingface.co/DreamCode/LLM4RGNN), and you can download it directly for use.
+
 ## 5. Experiment
 
 First, for attacked graph structure and negative samples of each dataset, you need to create the inference file of LLMs:
