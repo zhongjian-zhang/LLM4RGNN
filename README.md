@@ -72,6 +72,10 @@ Notably, to conveniently load datasets, we integrate textual information and gra
 
 https://drive.google.com/file/d/1GcZuuEIY8g4xgd6KWsglLjNnIveVLmLQ/view?usp=sharing
 
+Additionally, you can download the cora and citeseer datasets from the links below:
+
+https://drive.google.com/file/d/18byQN6O8FXOsUanbTGbqE0uJjzQeZcyf/view?usp=sharing
+
 |        Dataset         | #Nodes  |  #Edges   | #Classes | #Features |  Method   |
 | :--------------------: | :-----: | :-------: | :------: | :-------: | :-------: |
 |          Cora          |  2,708  |   5,429   |    7     |   1,433   |    BoW    |
