@@ -1,12 +1,12 @@
 CUDA_VISIBLE_DEVICES=1 python src/train_bash.py \
     --stage sft \
     --do_train \
-    --model_name_or_path ../../src/LLM/models/mistral-7b/snapshots/7ad5799710574ba1c1d953eba3077af582f3a773 \
-    --dataset train_edge_label \
+    --model_name_or_path /home/zzj/LLMs/mistral-7b/snapshots/7ad5799710574ba1c1d953eba3077af582f3a773 \
+    --dataset train \
     --template default \
     --finetuning_type lora \
     --lora_target q_proj,v_proj \
-    --output_dir ../../saved_model/llm/mistral-7b-edge-lora \
+    --output_dir ../../saved_model/llm/mistral-7b-lora \
     --overwrite_cache \
     --overwrite_output_dir \
     --per_device_train_batch_size 16 \

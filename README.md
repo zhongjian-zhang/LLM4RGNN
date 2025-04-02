@@ -3,20 +3,19 @@
 Source code for KDD 2025 paper "**Can Large Language Models Improve the Adversarial Robustness of Graph Neural Networks?**"
 Paper link: https://arxiv.org/pdf/2408.08685
 
-![QQ_1733562983626](https://img.dreamcodecity.cn/img/QQ_1733562983626.png)
+![QQ_1733562983626](http://img.dreamcodecity.cn/img/QQ_1733562983626.png)
 
 ## 1. Python Environment
 
-- Python 3.8
-- PyTorch 2.1.1
-- torch_geometric 2.4.0
 - OS: Linux ubuntu 5.15.0-102-generic.
 - CPU: Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz.
 - GPU: NVIDIA A800 80GB.
 
 Create a conda (see Anaconda or Miniconda) environment with the required packages:
 ```sh
-conda env create -f environment.yml
+conda create -n llm4rgnn python=3.12
+conda activate llm4rgnn
+pip install -r requirements.txt
 ```
 
 ## 2. Code Structure
@@ -45,13 +44,6 @@ LLM4RGNN/
 │   └── purify
 └── src
     ├── LLaMA-Factory
-    │   ├── assets
-    │   ├── data
-    │   ├── evaluation
-    │   ├── examples
-    │   ├── scripts
-    │   ├── src
-    │   └── tests
     ├── model
     ├── script
     ├── util
@@ -68,11 +60,11 @@ The data sources are as follows:
 - OGBN-Products: [LLM-Structured-Data Repository](https://github.com/TRAIS-Lab/LLM-Structured-Data) (MIT license)
 - Cora, Pubmed, OGBN-Arxiv, TAPE-Arxiv23: [TAPE Repository](https://github.com/XiaoxinHe/TAPE) (MIT license)
 
-Notably, to conveniently load datasets, we integrate textual information and graph information into a single pt file, and you can download the pt file for big graph dataset from the links below:
+Notably, to conveniently load datasets, we integrate textual information and graph information into a single pt file, and you can download the pt file for big graph datasets (OGBN-Arxiv, OGBN-Products, PubMed) from the links below:
 
 https://drive.google.com/file/d/1GcZuuEIY8g4xgd6KWsglLjNnIveVLmLQ/view?usp=sharing
 
-Additionally, you can download the cora and citeseer datasets from the links below:
+and download the cora and citeseer datasets from the links below:
 
 https://drive.google.com/file/d/18byQN6O8FXOsUanbTGbqE0uJjzQeZcyf/view?usp=sharing
 
@@ -91,11 +83,15 @@ LLM4RGNN is a general framework, suitable for different LLMs. As representative 
 
 Hugging Face: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
 
-We utilize GPT-4 to construct an instruction dataset, including GPT-4's maliciousness assessments and analyses of 26,518 edges. The dataset located in `LLM4RGNN/src/LLaMA-Factory/data/train.jsonl`, and you can tune any LLMs by running the following commend:
+We utilize GPT-4 to construct an instruction dataset, including GPT-4's maliciousness assessments and analyses of 26,518 edges. You can download the dataset from https://drive.google.com/file/d/1Ozhp5DStT0Tx1pzFpfU3ZW4oacQIt5HN/view?usp=sharing and  place it in `LLM4RGNN/src/LLaMA-Factory/data/train.jsonl`, and you can tune any LLMs by running the following commend:
 
 ```bash
 bash LLM4RGNN/src/LLaMA-Factory/instruct_tuning.sh
 ```
+
+If you plan to fine-tune the LLM, we recommend that you create a separate conda environment compatible with [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/blob/main/requirements.txt).
+
+We also provide the mistral-7B lora file in `LLM4RGNN/saved_model/llm/mistral-7b-lora`, thus you can directly use it to skip tuning LLMs. 
 
 Then, you need to merge the Lora file and the LLM file to construct the tuned LLM by running the following commend:
 
@@ -103,11 +99,11 @@ Then, you need to merge the Lora file and the LLM file to construct the tuned LL
 bash LLM4RGNN/src/LLaMA-Factory/merge.sh
 ```
 
-**Notably, you need to specify the original llm path by modifying the model_name_or_path in instruct_tuning.sh and merge.sh**
+**Notably, you need to specify the original llm path by modifying the "model_name_or_path" in instruct_tuning.sh and merge.sh**
 
-We also provide the mistral-7B lora file in `LLM4RGNN/saved_model/llm/mistral-7b-lora`, thus you can directly use it to skip tuning LLMs.
+🎯We have uploaded the well-tuned Mistral-7B at [https://huggingface.co/DreamCode/LLM4RGNN](https://huggingface.co/DreamCode/LLM4RGNN), thus you can download it directly for use.
 
-🎯We recently uploaded the well-tuned Mistral-7B at [https://huggingface.co/DreamCode/LLM4RGNN](https://huggingface.co/DreamCode/LLM4RGNN), and you can download it directly for use.
+🎯We provide all the inference results from the experiments at the link: https://drive.google.com/file/d/1IqQ2pHot54AL1ykXMIsoFy3CqwNTCRsa/view?usp=sharing
 
 ## 5. Experiment
 
@@ -126,7 +122,7 @@ bash LLM4RGNN/src/LLaMA-Factory/inference.sh
 Finally, you can purify the attacked graph structure and test the performance of GNNs:
 
 ```bash
-python src/LLM/script/exp.py
+python src/LLM/script/run.py
 ```
 
 ## 6. vLLM for Improving Inference Efficiency

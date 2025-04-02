@@ -77,7 +77,7 @@ def main():
     edge_index = coalesce(torch.tensor(csr_matrix_to_edge_index(csr_matrix(edge_index))))
     print(edge_index.shape)
     request_path = get_path_to("llm_response") / f"{{args.llm}}/all/{args.dataset}"
-    llm_path = str(get_path_to("saved_model") / f"llm/{args.llm}")
+    llm_path = f"../../saved_model/llm/{args.llm}"
     complete_edge_index, complete_instruction_list = complete_test_instruction(edge_index, text, llm_path, request_path)
     print(complete_edge_index.shape)
     file_path = f'./instruction/{args.dataset}_{args.attack}_{args.ptb_rate}.jsonl'
