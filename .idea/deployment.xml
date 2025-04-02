@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="A800服务器3卡 (2)" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="A800服务器3卡">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/zzj/personal_research/LLM4RGNN" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="A800服务器3卡 (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/zzj/personal_research/LLM4RGNN" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="zzj@10.112.201.18:10090 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/zzj/personal_research/LLM4RGNN" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="zzj@10.112.25.49:10090 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/zzj/personal_research/LLM4RGNN" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
