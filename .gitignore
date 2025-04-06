@@ -1,0 +1,99 @@
+# Project specific ignores
+dataset/*
+!dataset/.gitkeep
+
+# llm_response
+llm_response/*
+!llm_response/*/
+!llm_response/*/all/
+!llm_response/*/global/
+!llm_response/*/clean/
+!llm_response/*/negative/
+llm_response/*/*/*/*
+llm_response/*/*/*/* 
+!llm_response/*/*/.gitkeep
+
+# LLaMA-Factory/data - only keep dataset_info.json
+src/LLaMA-Factory/data/*
+!src/LLaMA-Factory/data/dataset_info.json
+
+src/vllm/instruction/*
+!src/vllm/instruction/.gitkeep
+
+# saved_model
+saved_model/llm/mistral-7b-merge/*
+!saved_model/llm/mistral-7b-merge/.gitkeep
+
+# node_emb
+saved_model/node_emb/*
+!saved_model/node_emb/.gitkeep
+!saved_model/node_emb/sbert/
+saved_model/node_emb/sbert/*
+!saved_model/node_emb/sbert/.gitkeep
+
+# candidate_node
+saved_model/candidate_node/*
+!saved_model/candidate_node/.gitkeep
+
+# clean
+saved_model/clean/*
+!saved_model/clean/.gitkeep
+
+# purify
+saved_model/purify/*
+!saved_model/purify/.gitkeep
+!saved_model/purify/clean/
+saved_model/purify/clean/*
+!saved_model/purify/clean/.gitkeep
+!saved_model/purify/global/
+saved_model/purify/global/*
+!saved_model/purify/global/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3 

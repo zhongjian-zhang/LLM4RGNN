@@ -1,12 +1,12 @@
-CUDA_VISIBLE_DEVICES=2 python ./src/train_bash.py \
+CUDA_VISIBLE_DEVICES=1 python ./src/train_bash.py \
     --stage sft \
     --do_predict \
     --no_do_sample \
-    --model_name_or_path ../../LLM4RGNN/saved_model/llm/mistral-7b-merge  \
+    --model_name_or_path ../../saved_model/llm/mistral-7b-merge  \
     --dataset cora_meta_0.1 \
     --template default \
     --output_dir ../../llm_response/mistral-7b-merge/global/cora_meta_0.1 \
-    --per_device_eval_batch_size 4 \
+    --per_device_eval_batch_size 32 \
     --max_samples 100000 \
     --predict_with_generate \
     --fp16

@@ -15,7 +15,8 @@ from sentence_transformers import SentenceTransformer
 
 
 def text_to_embedding(texts, device):
-    model = SentenceTransformer(model_name_or_path='../../all-MiniLM-L6-v2', device=device)
+    model = SentenceTransformer(
+        model_name_or_path='all-MiniLM-L6-v2', device=device)
     embs = torch.from_numpy(model.encode(texts))
     return embs
 
