@@ -3,14 +3,18 @@
 datasets=('cora')
 attacks=('meta')
 llm="mistral-7b-merge"
+
 for dataset in "${datasets[@]}"; do
   for attack in "${attacks[@]}"; do
       if [ "$attack" == "meta" ]; then
-          ptb_rates=(0 0.05 0.1 0.2)
-      else
-          ptb_rates=(0.1)
+          ptb_rates=(0.0 0.05 0.1 0.2)
+      elif [ "$attack" == "dice" ]; then
+          ptb_rates=(0.1 0.2 0.4)
       fi
+      
       for ptb_rate in "${ptb_rates[@]}"; do
+          echo "Processing dataset: ${dataset}, attack: ${attack}, ptb_rate: ${ptb_rate}"
+          
           python create_instruction.py --llm ${llm} --dataset "${dataset}" --attack "${attack}" --ptb_rate "${ptb_rate}"
 
           CUDA_VISIBLE_DEVICES=1,2 python -m vllm.entrypoints.openai.run_batch \
