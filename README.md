@@ -210,7 +210,7 @@ If you find this work useful, please consider starring 🌟 this repo and citing
 @article{zhang2024llm4rgnn,
   title={Can Large Language Models Improve the Adversarial Robustness of Graph Neural Networks?},
   author={Zhang, Zhongjian and Wang, Xiao and Zhou, Huichi and Yu, Yue and Zhang, Mengmei and Yang, Cheng and Shi, Chuan},
-  journal={arXiv preprint arXiv:2408.08685},
-  year={2024}
+  journal={ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  year={2025}
 }
 ```
