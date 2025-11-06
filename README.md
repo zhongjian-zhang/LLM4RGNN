@@ -2,6 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2408.08685-b31b1b.svg)](https://arxiv.org/abs/2408.08685)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/zhongjian-zhang/LLM4RGNN)
 
 Official implementation for KDD 2025 paper: "**[Can Large Language Models Improve the Adversarial Robustness of Graph Neural Networks?](https://arxiv.org/pdf/2408.08685)**"
 
